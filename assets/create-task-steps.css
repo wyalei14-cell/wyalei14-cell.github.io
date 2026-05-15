@@ -1,0 +1,132 @@
+.task-form.stepper-enhanced {
+  position: relative;
+}
+
+.create-stepper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+}
+
+.create-step {
+  color: #eef8f599;
+  background: #ffffff08;
+  border: 1px solid #ffffff14;
+  border-radius: 12px;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 0.85rem;
+  display: flex;
+}
+
+.create-step.is-active {
+  color: #eef8f5;
+  background: linear-gradient(135deg, #d8ff7c1f, #8de4d314);
+  border-color: #d8ff7c66;
+  box-shadow: 0 0 0 2px #d8ff7c1a;
+}
+
+.create-step.is-done {
+  color: #eef8f5bf;
+  border-color: #8de4d34d;
+}
+
+.create-step-index {
+  color: #071217;
+  background: linear-gradient(135deg, #d8ff7c, #8de4d3);
+  border-radius: 999px;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: center;
+}
+
+.create-step-copy {
+  min-width: 0;
+}
+
+.create-step-title {
+  color: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.create-step-desc {
+  color: #eef8f573;
+  margin-top: 0.15rem;
+  font-size: 0.76rem;
+  line-height: 1.3;
+}
+
+.create-step-panel {
+  display: none;
+}
+
+.create-step-panel.is-active {
+  display: block;
+}
+
+.create-step-actions {
+  border-top: 1px solid #ffffff14;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.create-step-actions button {
+  cursor: pointer;
+  border: 1px solid #ffffff1f;
+  border-radius: 999px;
+  min-height: 44px;
+  padding: 0 1.25rem;
+  font-weight: 800;
+}
+
+.create-step-prev {
+  color: #eef8f5;
+  background: #ffffff12;
+}
+
+.create-step-next {
+  color: #071217;
+  background: linear-gradient(135deg, #d8ff7c, #8de4d3);
+  border: none;
+  margin-left: auto;
+}
+
+.task-form.stepper-enhanced .submit-btn {
+  margin-top: 0;
+}
+
+.task-form.stepper-enhanced .create-step-actions .submit-btn {
+  flex: 1;
+  width: auto;
+}
+
+@media (width <= 760px) {
+  .create-stepper {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .create-step {
+    padding: 0.7rem;
+  }
+
+  .create-step-actions {
+    flex-direction: column;
+  }
+
+  .create-step-actions button,
+  .task-form.stepper-enhanced .submit-btn {
+    width: 100%;
+  }
+}

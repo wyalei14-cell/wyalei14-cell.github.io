@@ -1,0 +1,738 @@
+body.route-home .filter-dock,
+body.route-home .task-board {
+  display: none !important;
+}
+
+body.route-home .market-hero {
+  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
+  min-height: min(560px, calc(100vh - 108px));
+  gap: 1rem;
+}
+
+body.route-home .hero-copy h1 {
+  max-width: 920px;
+  font-size: clamp(3.1rem, 8vw, 6.4rem);
+}
+
+body.route-home .hero-copy p {
+  max-width: 760px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+body.route-home .hero-copy {
+  padding: clamp(1.7rem, 4.6vw, 4rem);
+}
+
+body.route-home .hero-actions {
+  margin-top: 1.45rem;
+}
+
+body.route-home .hero-panel {
+  padding: 1rem;
+}
+
+.home-flow-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-flow-card h2 {
+  color: #fff8e8;
+  margin: 0 0 0.9rem;
+  font-size: 1.18rem;
+}
+
+.home-flow-steps {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.home-flow-steps div {
+  background: #ffffff0a;
+  border: 1px solid #e0cc991f;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.home-flow-steps span {
+  color: #79dacd;
+  display: block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.home-flow-steps strong {
+  color: #fff8e8;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.home-flow-steps i {
+  background: linear-gradient(#d6b45f, #79dacd);
+  width: 2px;
+  height: 12px;
+  margin-left: 1.25rem;
+}
+
+.platform-showcase {
+  width: min(1440px, 100%);
+  margin: 1rem auto 0;
+  padding: 0 clamp(1rem, 2.6vw, 2.4rem) 2rem;
+}
+
+.platform-stats {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.platform-stats article {
+  color: #f5ead3a8;
+  background: linear-gradient(#ffffff0d, #ffffff03), #080c12bd;
+  border: 1px solid #e0cc991f;
+  border-radius: 10px;
+  min-height: 116px;
+  padding: 0.9rem;
+  box-shadow: 0 18px 56px #00000035;
+}
+
+.platform-stats strong {
+  color: #fff8e8;
+  display: block;
+  min-height: 2.15rem;
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  line-height: 1;
+}
+
+.platform-stats span {
+  color: #d6b45f;
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.platform-stats small {
+  color: #f5ead380;
+  display: block;
+  margin-top: 0.25rem;
+  line-height: 1.35;
+}
+
+.platform-section {
+  margin-top: 0.9rem;
+  background: linear-gradient(#ffffff0d, #ffffff03), #080c12bd;
+  border: 1px solid #e0cc991f;
+  border-radius: 12px;
+  padding: clamp(1rem, 2.3vw, 1.55rem);
+  box-shadow: 0 20px 64px #00000038;
+}
+
+.section-heading h2 {
+  color: #fff8e8;
+  max-width: 840px;
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.45rem, 2.6vw, 2.25rem);
+  line-height: 1.08;
+}
+
+.mode-grid,
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.why-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.mode-grid article,
+.why-grid article,
+.timeline-track article {
+  color: #f5ead3a8;
+  background: #ffffff08;
+  border: 1px solid #e0cc991a;
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+
+.mode-grid h3,
+.why-grid h3,
+.timeline-track h3 {
+  color: #fff8e8;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.mode-grid p,
+.why-grid p,
+.timeline-track p {
+  margin: 0.55rem 0 0;
+  line-height: 1.7;
+}
+
+.timeline-track {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(180px, 1fr));
+  gap: 0.65rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.timeline-track article {
+  position: relative;
+}
+
+.timeline-track article:not(:last-child)::after {
+  content: "";
+  background: linear-gradient(90deg, #d6b45f, #79dacd);
+  width: 28px;
+  height: 2px;
+  position: absolute;
+  top: 1.48rem;
+  right: -18px;
+}
+
+.timeline-track span {
+  color: #79dacd;
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 900;
+}
+
+body.route-tasks .market-hero {
+  display: none !important;
+}
+
+.tasks-hub-header {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: clamp(1rem, 2.6vw, 2.4rem) clamp(1rem, 2.6vw, 2.4rem) 0;
+}
+
+.tasks-hub-header-inner {
+  background:
+    linear-gradient(115deg, #d6b45f1f, #0000 42%),
+    radial-gradient(circle at 84% 18%, #79dacd1a, #0000 28%), #080c12c2;
+  border: 1px solid #e0cc991f;
+  border-radius: 14px;
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  box-shadow: 0 24px 80px #0000004d;
+}
+
+.tasks-hub-header span {
+  color: #d6b45f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.tasks-hub-header h1 {
+  color: #fff8e8;
+  margin: 0.55rem 0 0;
+  font-size: clamp(2rem, 4.8vw, 4rem);
+  line-height: 0.98;
+}
+
+.tasks-hub-header p {
+  color: #f5ead3a8;
+  max-width: 760px;
+  margin: 0.85rem 0 0;
+  line-height: 1.8;
+}
+
+.workspace-hub-header {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: clamp(1rem, 2.6vw, 2.4rem) clamp(1rem, 2.6vw, 2.4rem) 0;
+}
+
+.workspace-hub-header-inner {
+  background:
+    linear-gradient(115deg, #d6b45f1f, #0000 42%),
+    radial-gradient(circle at 84% 18%, #79dacd1a, #0000 28%), #080c12c2;
+  border: 1px solid #e0cc991f;
+  border-radius: 14px;
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  box-shadow: 0 24px 80px #0000004d;
+}
+
+.workspace-hub-header span {
+  color: #d6b45f;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.workspace-hub-header h1 {
+  color: #fff8e8;
+  margin: 0.55rem 0 0;
+  font-size: clamp(2rem, 4.8vw, 4rem);
+  line-height: 0.98;
+}
+
+.workspace-hub-header p {
+  color: #f5ead3a8;
+  max-width: 760px;
+  margin: 0.85rem 0 0;
+  line-height: 1.8;
+}
+
+.workspace-page-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.1rem;
+}
+
+.workspace-page-tabs button {
+  color: #f5ead3c7;
+  cursor: pointer;
+  background: #ffffff09;
+  border: 1px solid #e0cc9929;
+  border-radius: 8px;
+  min-width: 112px;
+  min-height: 40px;
+  padding: 0 1rem;
+  font-weight: 800;
+}
+
+.workspace-page-tabs button.is-active {
+  color: #071018;
+  background: linear-gradient(135deg, #d6b45f, #79dacd);
+  border-color: #0000;
+}
+
+.tasks-mobile-toolbar {
+  display: none;
+}
+
+.tasks-layout {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 2.6vw, 2.4rem) clamp(1.5rem, 3vw, 2.6rem);
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+body.route-tasks .filter-dock,
+body.route-tasks .task-board {
+  margin-top: 1rem;
+}
+
+body.route-tasks .filter-dock {
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+}
+
+body.route-tasks .filter-grid {
+  grid-template-columns: 1fr;
+}
+
+body.route-tasks .deal-row {
+  grid-template-columns: 120px minmax(0, 1fr) 180px 150px;
+}
+
+.workspace-messages-panel {
+  display: none;
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 1rem clamp(1rem, 2.6vw, 2.4rem) clamp(1.5rem, 3vw, 2.6rem);
+}
+
+.workspace-messages-panel iframe {
+  display: block;
+  width: 100%;
+  min-height: 760px;
+  height: calc(100vh - 220px);
+  background: #080c12;
+  border: 1px solid #e0cc991f;
+  border-radius: 14px;
+  box-shadow: 0 24px 80px #0000004d;
+}
+
+body.route-workspace.workspace-messages-open
+  .main-content
+  > :not(.workspace-hub-header):not(.workspace-messages-panel) {
+  display: none !important;
+}
+
+body.route-workspace.workspace-messages-open .workspace-messages-panel {
+  display: block;
+}
+
+body.route-workspace .my-tasks-page > .page-header {
+  display: none !important;
+}
+
+body.route-workspace .main-content,
+body.route-profile .main-content {
+  background: #05090d !important;
+}
+
+body.route-workspace .my-tasks-page,
+body.route-profile .profile {
+  width: min(1180px, 100%) !important;
+  margin: 0 auto !important;
+  padding: 1rem clamp(0.9rem, 2.4vw, 1.6rem) 2rem !important;
+}
+
+body.route-workspace .my-tasks-page .tasks-content,
+body.route-profile .profile-header,
+body.route-profile .credit-scores,
+body.route-profile .stake-section,
+body.route-profile .accounts-section,
+body.route-profile .token-reward-summary,
+body.route-profile .pending-banner,
+body.route-profile .stat-card {
+  border-radius: 12px !important;
+  box-shadow: 0 16px 48px #00000033 !important;
+}
+
+body.route-workspace .my-tasks-page .tabs,
+body.route-workspace .my-tasks-page .filter-bar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.55rem !important;
+  align-items: center !important;
+  margin-bottom: 0.8rem !important;
+}
+
+body.route-workspace .my-tasks-page .tab-btn,
+body.route-workspace .my-tasks-page .filter-btn,
+body.route-workspace .my-tasks-page .token-select {
+  min-height: 40px !important;
+  border-radius: 8px !important;
+  font-size: 0.88rem !important;
+}
+
+body.route-workspace .my-tasks-page .task-cards,
+body.route-workspace .my-tasks-page .task-list {
+  display: grid !important;
+  gap: 0.65rem !important;
+}
+
+body.route-workspace .my-tasks-page .task-card {
+  border-radius: 10px !important;
+  padding: 0.95rem !important;
+  box-shadow: none !important;
+  transition:
+    border-color 0.18s ease,
+    background 0.18s ease,
+    transform 0.18s ease !important;
+}
+
+body.route-workspace .my-tasks-page .task-card:hover {
+  background: #79dacd0d !important;
+  border-color: #79dacd42 !important;
+  transform: translateY(-1px) !important;
+}
+
+body.route-workspace .my-tasks-page .card-header,
+body.route-workspace .my-tasks-page .task-info {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.55rem 0.8rem !important;
+  align-items: center !important;
+}
+
+body.route-workspace .my-tasks-page .task-title {
+  margin: 0.65rem 0 0.5rem !important;
+  font-size: 1rem !important;
+  line-height: 1.45 !important;
+}
+
+body.route-profile .profile::before,
+body.route-profile .profile::after,
+body.route-profile .profile-header::before,
+body.route-profile .credit-scores::before,
+body.route-profile .stake-section::before,
+body.route-profile .accounts-section::before,
+body.route-profile .token-reward-summary::before,
+body.route-profile .pending-banner::before,
+body.route-profile .stat-card::before {
+  display: none !important;
+}
+
+body.route-profile .profile-header {
+  padding: clamp(1rem, 2.2vw, 1.3rem) !important;
+}
+
+body.route-profile .user-info {
+  grid-template-columns: 128px minmax(0, 1fr) !important;
+  gap: 1rem !important;
+}
+
+body.route-profile .avatar-container {
+  width: 128px !important;
+  height: 128px !important;
+  border-radius: 14px !important;
+}
+
+body.route-profile .nickname {
+  font-size: clamp(1.55rem, 3vw, 2.15rem) !important;
+  letter-spacing: 0 !important;
+}
+
+body.route-profile .bio {
+  max-width: 62rem !important;
+  line-height: 1.6 !important;
+}
+
+body.route-profile .credit-scores,
+body.route-profile .stats-grid,
+body.route-profile .accounts-list {
+  gap: 0.75rem !important;
+}
+
+body.route-profile .stake-section,
+body.route-profile .accounts-section,
+body.route-profile .token-reward-summary,
+body.route-profile .pending-banner {
+  padding: clamp(1rem, 2.2vw, 1.25rem) !important;
+}
+
+body.route-profile .stat-card,
+body.route-profile .credit-item,
+body.route-profile .account-item,
+body.route-profile .summary-item {
+  border-radius: 10px !important;
+}
+
+.top-command {
+  min-height: 64px !important;
+}
+
+.main-content {
+  min-width: 0 !important;
+}
+
+.mobile-bottom-nav {
+  border-top: 1px solid #e0cc9918 !important;
+  background: #05090df2 !important;
+}
+
+.task-modal-backdrop {
+  display: none;
+}
+
+.tasks-directory-link {
+  color: #f5ead3c7;
+  background: #ffffff09;
+  border: 1px solid #e0cc9929;
+}
+
+.tasks-directory-bottom {
+  color: var(--text-tertiary, #f5ead36b);
+}
+
+.tasks-directory-bottom.active,
+.tasks-directory-bottom.router-link-active {
+  color: var(--primary-color, #d6b45f) !important;
+}
+
+@media (width <= 900px) {
+  body.route-home .market-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 0.75rem;
+  }
+
+  body.route-home .hero-copy {
+    padding: 1.05rem !important;
+  }
+
+  body.route-home .hero-copy h1 {
+    font-size: clamp(2.4rem, 13vw, 3.8rem);
+  }
+
+  body.route-home .hero-copy p {
+    font-size: 0.92rem;
+  }
+
+  .platform-showcase {
+    margin-top: 0.75rem;
+    padding: 0 0.85rem 1.2rem;
+  }
+
+  .platform-stats,
+  .mode-grid,
+  .why-grid,
+  .tasks-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-stats article {
+    min-height: auto;
+    padding: 0.82rem;
+  }
+
+  .platform-section {
+    margin-top: 0.7rem;
+    padding: 0.85rem;
+  }
+
+  .timeline-track {
+    grid-template-columns: 1fr;
+    overflow: visible;
+  }
+
+  .timeline-track article:not(:last-child)::after {
+    width: 2px;
+    height: 20px;
+    top: auto;
+    right: auto;
+    bottom: -15px;
+    left: 1.15rem;
+  }
+
+  .tasks-hub-header,
+  .workspace-hub-header {
+    padding: 0.85rem 0.85rem 0;
+  }
+
+  .workspace-page-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .workspace-page-tabs button {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .tasks-layout {
+    padding: 0 0.85rem calc(88px + env(safe-area-inset-bottom, 0px));
+  }
+
+  body.route-workspace .my-tasks-page,
+  body.route-profile .profile {
+    padding: 0.75rem 0.85rem calc(88px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+
+  body.route-profile .user-info {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.route-profile .avatar-container {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  body.route-profile .profile-header,
+  body.route-profile .credit-scores,
+  body.route-profile .stake-section,
+  body.route-profile .accounts-section,
+  body.route-profile .token-reward-summary,
+  body.route-profile .pending-banner,
+  body.route-profile .stat-card,
+  body.route-workspace .my-tasks-page .task-card {
+    border-radius: 10px !important;
+  }
+
+  body.route-workspace .my-tasks-page .tabs,
+  body.route-workspace .my-tasks-page .filter-bar {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  body.route-workspace .my-tasks-page .token-select {
+    grid-column: 1 / -1;
+    width: 100% !important;
+  }
+
+  .workspace-messages-panel {
+    padding: 0.75rem 0.85rem calc(88px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .workspace-messages-panel iframe {
+    min-height: 680px;
+    height: calc(100vh - 170px);
+    border-radius: 10px;
+  }
+
+  .tasks-mobile-toolbar {
+    display: flex;
+    gap: 0.6rem;
+    width: min(1440px, calc(100% - 1.7rem));
+    margin: 0.75rem auto 0;
+  }
+
+  .tasks-mobile-toolbar button {
+    color: #071018;
+    cursor: pointer;
+    background: linear-gradient(135deg, #d6b45f, #79dacd);
+    border: 0;
+    border-radius: 8px;
+    flex: 1;
+    min-height: 42px;
+    font-weight: 800;
+  }
+
+  .tasks-mobile-toolbar button.secondary {
+    color: #f5ead3c7;
+    background: #ffffff09;
+    border: 1px solid #e0cc9929;
+  }
+
+  .task-modal-backdrop {
+    background: #000000a8;
+    position: fixed;
+    inset: 0;
+    z-index: 1099;
+  }
+
+  body.sort-open .task-modal-backdrop,
+  body.filters-open .task-modal-backdrop {
+    display: block;
+  }
+
+  body.route-tasks .filter-dock {
+    display: none;
+    position: fixed;
+    z-index: 1100;
+    top: auto;
+    right: 0.75rem;
+    bottom: calc(86px + env(safe-area-inset-bottom, 0px));
+    left: 0.75rem;
+    max-height: min(72vh, 620px);
+    overflow: auto;
+    margin: 0;
+  }
+
+  body.route-tasks.sort-open .filter-dock,
+  body.route-tasks.filters-open .filter-dock {
+    display: block;
+  }
+
+  body.route-tasks.sort-open .filter-grid label {
+    display: none;
+  }
+
+  body.route-tasks.sort-open .filter-grid label[data-filter-field="sort"] {
+    display: flex;
+  }
+
+  body.route-tasks.filters-open .filter-grid label[data-filter-field="sort"] {
+    display: none;
+  }
+
+  body.route-tasks .deal-row {
+    grid-template-columns: 1fr;
+  }
+
+  .tasks-directory-bottom small {
+    font-size: 0.72rem !important;
+  }
+}
